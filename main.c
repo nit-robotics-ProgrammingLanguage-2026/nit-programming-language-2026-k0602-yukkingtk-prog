@@ -1,17 +1,27 @@
 
-long long sum = 0;
-int i;
+#include <stdio.h>
 
-if (n < 0)
+int main(void)
 {
-    printf("NG\n");
-}
-else
-{
-    for (i = 1; i <= n; i += 2)
+    int n;
+    int i;
+    long long sum = 0;
+
+    scanf("%d", &n);
+
+    if (n < 0)
     {
-        sum += i;
+        printf("NG\n");
+    }
+    else
+    {
+        for (i = 1; i <= n; i += 2)
+        {
+            sum += i;
+        }
+
+        printf("%lld\n", sum);
     }
 
-    printf("%lld\n", sum);
+    return 0;
 }
