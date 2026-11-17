@@ -1,9 +1,17 @@
-#include <stdio.h>
 
-int main(void)
+long long sum = 0;
+int i;
+
+if (n < 0)
 {
-    int n;
-    scanf("%d", &n);
-    /* TODO */
-    return 0;
+    printf("NG\n");
+}
+else
+{
+    for (i = 1; i <= n; i += 2)
+    {
+        sum += i;
+    }
+
+    printf("%lld\n", sum);
 }
